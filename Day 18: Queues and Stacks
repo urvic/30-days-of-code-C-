@@ -1,0 +1,32 @@
+#include <iostream>
+#include<bits/stdc++.h>
+
+using namespace std;
+
+class Solution {
+    //Write your code here
+      public:
+      stack<char> a;
+      queue<char> b;
+    
+      void pushCharacter(char ch){
+          a.push(ch);
+      }
+      void enqueueCharacter(char ch){
+          b.push(ch);
+      }
+      char popCharacter(){
+          char temp=a.top();
+          a.pop();
+          return temp;
+      }
+      char dequeueCharacter(){
+          char temp=b.front();
+          b.pop();
+          return temp;
+      }
+
+
+};
+
+
